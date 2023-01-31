@@ -14,7 +14,7 @@ portuguese(){
     CYAN='\033[0;36m'
     echo -e "${CYAN}Copyright (c) 2022 TemuxOS"
     echo -e "${CYAN}This Software is opensource."
-    echo -e "Theme Instalator"
+    echo -e "Register Module Instalator"
     echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
     echo -e "Select your Language"
     echo -e "${CYAN}[1] Portuguese"
