@@ -10,6 +10,9 @@ fi
 clear
 
 instalarmodulo(){
+    cd /var/www/
+    tar -cvf pterodactylbackup.tar.gz pterodactyl
+    echo -e "${CYAN}Instalando Modulo de Registro..."
     cd /var/www/pterodactyl
     rm -r pterodactylregisteraddonauto
     rm -rf /var/www/pterodactyl/app/Providers/RouteServiceProvider.php
@@ -69,7 +72,7 @@ restaurarbackup(){
     echo "Restaurando Backup..."
     cd /var/www/
     tar -xvf pterodactylbackup.tar.gz
-    rm pterodactylthemes.tar.gz
+    rm pterodactylregisteraddonauto.tar.gz
 
     cd /var/www/pterodactyl
     yarn build:production
