@@ -9,7 +9,7 @@ fi
 
 clear
 
-instalartema(){
+instalarmodulo(){
     cd /var/www/pterodactyl
     rm -r pterodactylregisteraddonauto
     rm -rf /var/www/pterodactyl/app/Providers/RouteServiceProvider.php
@@ -46,11 +46,11 @@ instalartema(){
 
 }
 
-instaladordetemas(){
+instaladordeaddons(){
     while true; do
         read -p "Tem certeza de que deseja instalar o tema [y/n]? " yn
         case $yn in
-            [Yy]* ) instalartema; break;;
+            [Yy]* ) instalarmodulo; break;;
             [Nn]* ) exit;;
             * ) echo "Por favor responda yes ou no.";;
         esac
@@ -79,7 +79,7 @@ restaurarbackup(){
     CYAN='\033[0;36m'
     echo -e "${CYAN}Copyright (c) 2022 TemuxOS"
     echo -e "${CYAN}Esse progama e um software livre, você pode modificar e distribuir sem problemas"
-    echo -e ""
+    echo -e "${CYAN}Modulo De Registro"
     echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
     echo -e ""
     echo -e "${CYAN} [1] Instalar o Modulo"
@@ -91,7 +91,7 @@ restaurarbackup(){
 read -p "Insira um numero: " choice
 if [ $choice == "1" ]
     then
-    instaladordetemas
+    instaladordeaddons
 fi
 if [ $choice == "2" ]
     then
