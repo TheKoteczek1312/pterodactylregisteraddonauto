@@ -5,8 +5,6 @@ fi
 
 clear
 
-
-
 portuguese(){
     bash <(curl https://github.com/CatValentine-Dev/pterodactylregisteraddonauto/blob/main/instaladorportugues.sh)
 }
