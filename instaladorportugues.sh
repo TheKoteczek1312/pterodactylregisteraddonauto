@@ -79,7 +79,7 @@ restaurarbackup(){
 read -p "Insira um numero: " choice
 if [ $choice == "1" ]
     then
-    instaladordetemas
+    instalarmodulo
 fi
 if [ $choice == "2" ]
     then
