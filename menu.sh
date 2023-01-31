@@ -8,24 +8,21 @@ clear
 
 
 portuguese(){
-    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylregisteraddonauto/main/instaladorportugues.sh)
-    echo -e "${CYAN}Mudando Linguagem...."
+    bash <(curl https://github.com/CatValentine-Dev/pterodactylregisteraddonauto/blob/main/instaladorportugues.sh)
 }
 
 german(){
-    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylregisteraddonauto/main/instaladorgerman.sh)
-    echo -e "${CYAN}Sprache ndern...."
+    bash <(curl https://github.com/CatValentine-Dev/pterodactylregisteraddonauto/blob/main/instaladorgerman.sh)
 }
 
 english(){
-    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylregisteraddonauto/main/instaladorenglish.sh)
-    echo -e "${CYAN}Changing to english...."
+    bash <(curl https://github.com/CatValentine-Dev/pterodactylregisteraddonauto/blob/main/instaladorenglish.sh)
 }
 
     CYAN='\033[0;36m'
     echo -e "${CYAN}Copyright (c) 2022 TemuxOS"
     echo -e "${CYAN}This Software is opensource."
-    echo -e "Pterodactyl Register Addon Script"
+    echo -e "Register Module Instalator"
     echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
     echo -e "Select your Language"
     echo -e "${CYAN}[1] Portuguese"
@@ -33,7 +30,7 @@ english(){
     echo -e "${CYAN}[3] English"
     echo -e "${CYAN}[4] Exit"
     
-read -p "Enter a Number: " choice
+read -p "Insira um numero: " choice
 if [ $choice == "1" ]
     then
     portuguese
@@ -50,4 +47,3 @@ if [ $choice == "4" ]
     then
     exit
 fi
-
