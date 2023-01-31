@@ -10,9 +10,6 @@ fi
 clear
 
 instalartema(){
-    cd /var/www/
-    tar -cvf pterodactylbackup.tar.gz pterodactyl
-    echo -e "${CYAN}Instalando temas..."
     cd /var/www/pterodactyl
     rm -r pterodactylregisteraddonauto
     rm -rf /var/www/pterodactyl/app/Providers/RouteServiceProvider.php
@@ -34,6 +31,7 @@ instalartema(){
     mv register_module.php /var/www/pterodactyl/routes/
     mv register.css /var/www/pterodactyl/public/modules/register/css/
     cd /var/www/pterodactyl
+    chmod -R 755 storage/* bootstrap/cache/
 
     curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
     apt update
@@ -45,8 +43,6 @@ instalartema(){
     cd /var/www/pterodactyl
     yarn build:production
     sudo php artisan optimize:clear
-    chown -R www-data:www-data /var/www/pterodactyl/*
-
 
 }
 
