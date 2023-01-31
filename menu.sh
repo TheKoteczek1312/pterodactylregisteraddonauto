@@ -1,5 +1,5 @@
 if (( $EUID != 0 )); then
-    echo -e "${CYAN}Run script as root"
+    echo -e "Run script as root"
     exit
 fi
 
@@ -13,13 +13,13 @@ portuguese(){
 
 
     CYAN='\033[0;36m'
-    echo -e "${CYAN}Copyright (c) 2022 TemuxOS"
-    echo -e "${CYAN}This Software is opensource."
+    echo -e "Copyright (c) 2022 TemuxOS"
+    echo -e "This Software is opensource."
     echo -e "Module Instalator"
-    echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
+    echo -e "Discord: https://discord.gg/WkVVtTaBRh/"
     echo -e "Select your Language"
-    echo -e "${CYAN}[1] Portuguese"
-    echo -e "${CYAN}[2] Exit"
+    echo -e "[1] Portuguese"
+    echo -e "[2] Exit"
     
 read -p "Insira um numero: " choice
 if [ $choice == "1" ]
