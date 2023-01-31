@@ -5,15 +5,17 @@ fi
 
 clear
 
+
+
 portuguese(){
-    bash <(curl https://github.com/CatValentine-Dev/pterodactylregisteraddonauto/blob/main/instaladorportugues.sh)
+    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylregisteraddonauto/main/instaladorportugues.sh)
 }
 
 
     CYAN='\033[0;36m'
     echo -e "${CYAN}Copyright (c) 2022 TemuxOS"
     echo -e "${CYAN}This Software is opensource."
-    echo -e "Register Module Instalator"
+    echo -e "Module Instalator"
     echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
     echo -e "Select your Language"
     echo -e "${CYAN}[1] Portuguese"
@@ -25,3 +27,7 @@ if [ $choice == "1" ]
     portuguese
 fi
 
+if [ $choice == "2" ]
+    then
+    exit
+fi
