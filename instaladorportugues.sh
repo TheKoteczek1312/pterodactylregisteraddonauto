@@ -51,7 +51,7 @@ instalarmodulo(){
 
 instaladordeaddons(){
     while true; do
-        read -p "Tem certeza de que deseja instalar o tema [y/n]? " yn
+        read -p "Tem certeza de que deseja instalar o modulo de Registro [y/n]? " yn
         case $yn in
             [Yy]* ) instalarmodulo; break;;
             [Nn]* ) exit;;
