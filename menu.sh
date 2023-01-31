@@ -8,15 +8,7 @@ clear
 
 
 portuguese(){
-    bash <(curl https://github.com/CatValentine-Dev/pterodactylregisteraddonauto/blob/main/instaladorportugues.sh)
-}
-
-german(){
-    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/instaladorgerman.sh)
-}
-
-english(){
-    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/instaladorenglish.sh)
+    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/instaladorportugues.sh)
 }
 
     CYAN='\033[0;36m'
@@ -26,9 +18,7 @@ english(){
     echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
     echo -e "Select your Language"
     echo -e "${CYAN}[1] Portuguese"
-    echo -e "${CYAN}[2] German"
-    echo -e "${CYAN}[3] English"
-    echo -e "${CYAN}[4] Exit"
+    echo -e "${CYAN}[2] Exit"
     
 read -p "Insira um numero: " choice
 if [ $choice == "1" ]
@@ -36,14 +26,6 @@ if [ $choice == "1" ]
     portuguese
 fi
 if [ $choice == "2" ]
-    then
-    german
-fi
-if [ $choice == "3" ]
-    then
-    english
-fi
-if [ $choice == "4" ]
     then
     exit
 fi
