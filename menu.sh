@@ -11,13 +11,6 @@ portuguese(){
     bash <(curl https://github.com/CatValentine-Dev/pterodactylregisteraddonauto/blob/main/instaladorportugues.sh)
 }
 
-german(){
-    bash <(curl https://github.com/CatValentine-Dev/pterodactylregisteraddonauto/blob/main/instaladorgerman.sh)
-}
-
-english(){
-    bash <(curl https://github.com/CatValentine-Dev/pterodactylregisteraddonauto/blob/main/instaladorenglish.sh)
-}
 
     CYAN='\033[0;36m'
     echo -e "${CYAN}Copyright (c) 2022 TemuxOS"
@@ -35,15 +28,4 @@ if [ $choice == "1" ]
     then
     portuguese
 fi
-if [ $choice == "2" ]
-    then
-    german
-fi
-if [ $choice == "3" ]
-    then
-    english
-fi
-if [ $choice == "4" ]
-    then
-    exit
-fi
+
