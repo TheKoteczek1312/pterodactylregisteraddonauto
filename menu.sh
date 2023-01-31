@@ -19,9 +19,7 @@ portuguese(){
     echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
     echo -e "Select your Language"
     echo -e "${CYAN}[1] Portuguese"
-    echo -e "${CYAN}[2] German"
-    echo -e "${CYAN}[3] English"
-    echo -e "${CYAN}[4] Exit"
+    echo -e "${CYAN}[2] Exit"
     
 read -p "Insira um numero: " choice
 if [ $choice == "1" ]
