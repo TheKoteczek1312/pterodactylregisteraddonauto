@@ -8,7 +8,7 @@ clear
 
 
 portuguese(){
-    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/instaladorportugues.sh)
+    bash <(curl https://github.com/CatValentine-Dev/pterodactylregisteraddonauto/blob/main/instaladorportugues.sh)
 }
 
 german(){
