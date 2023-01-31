@@ -8,7 +8,7 @@ clear
 
 
 portuguese(){
-    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/instaladorportugues.sh)
+    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylregisteraddonauto/main/instaladorportugues.sh)
 }
 
     CYAN='\033[0;36m'
