@@ -24,7 +24,7 @@
     <div class="sc-2l91w7-0 kDhnAT">
       <div class="pt-8 xl:pt-32">
         <div class="cyh04c-0 duHJKB">
-          <h2 class="cyh04c-1 emoCVo">Formulário de Registro</h2>
+          <h2 class="cyh04c-1 emoCVo">Formularz rejestracyjny</h2>
 
 
 
@@ -33,11 +33,11 @@
 		$res = explode('ion.', $post_res);
 		if(isset($res['1'])){
       $submitted = "error";
-			$res = "O endereço de e-mail ou o nome de usuário já existem.";
+			$res = "Adres e-mail lub nazwa użytkownika już istnieje.";
 
 		} else {
       $submitted = "success";
-			$res = "Sua conta foi registrada, por favor, verifique seu e-mail para fazer login.";
+			$res = "Twoje konto zostało zarejestrowane, sprawdź swoją skrzynkę e-mail, aby się zalogować.";
 		}
 	?>
 
@@ -48,13 +48,13 @@
 @if($submitted == "success")
 <div class="cyh04c-2 fNCLyU">
             <div role="alert" class="sc-1yg9bob-0 sc-1yg9bob-1 brfJKd hEbrIt" style="background: #14ac14; border: none;">
-            <span class="sc-1yg9bob-2 endIRo title" style="background: #0000002b; border: none;">Success</span>
+            <span class="sc-1yg9bob-2 endIRo title" style="background: #0000002b; border: none;">Powodzenie</span>
             <span class="sc-1yg9bob-3 knvREb">{{ $res }}</span>
 </div></div> @endif
 @if($submitted == "error")
 <div class="cyh04c-2 fNCLyU">
             <div role="alert" class="sc-1yg9bob-0 sc-1yg9bob-1 brfJKd hEbrIt">
-            <span class="sc-1yg9bob-2 endIRo title">Error</span>
+            <span class="sc-1yg9bob-2 endIRo title">Błąd</span>
             <span class="sc-1yg9bob-3 knvREb">{{ $res }}</span>
 </div></div>
 
@@ -73,7 +73,7 @@
 
             <div class="cyh04c-2 fNCLyU">
             <div role="alert" class="sc-1yg9bob-0 sc-1yg9bob-1 brfJKd hEbrIt">
-            <span class="sc-1yg9bob-2 endIRo title">Error</span>
+            <span class="sc-1yg9bob-2 endIRo title">Błąd</span>
             <span class="sc-1yg9bob-3 knvREb">{{ $error }}</span>
             </div></div>
 
@@ -99,22 +99,22 @@
               <div class="cyh04c-6 dFeVmo">
 
                 <div>
-                  <label class="g780ms-0 dlUeSf">Endereço de Email</label>
-                  <input name="registration_email" type="email" class="sc-19rce1w-0 hmhrLa" value="" placeholder="exemplo@gmail.com" required>
+                  <label class="g780ms-0 dlUeSf">Email</label>
+                  <input name="registration_email" type="email" class="sc-19rce1w-0 hmhrLa" value="" placeholder="example@gmail.com" required>
                 </div>
 
                 <div>
-                  <label class="g780ms-0 dlUeSf qtrnpk-1 cZROhH">Usuario</label>
-                  <input name="registration_username" type="text" class="sc-19rce1w-0 hmhrLa" value="" placeholder="Usuario" required>
+                  <label class="g780ms-0 dlUeSf qtrnpk-1 cZROhH">Nazwa użytkownika</label>
+                  <input name="registration_username" type="text" class="sc-19rce1w-0 hmhrLa" value="" placeholder="Użytkownik" required>
                 </div>
 
                 <div>
-                  <label class="g780ms-0 dlUeSf qtrnpk-1 cZROhH">Primerio Nome</label>
-                  <input name="registration_firstname" type="text" class="sc-19rce1w-0 hmhrLa" value="" placeholder="Primerio Nome" required>
+                  <label class="g780ms-0 dlUeSf qtrnpk-1 cZROhH">Imię</label>
+                  <input name="registration_firstname" type="text" class="sc-19rce1w-0 hmhrLa" value="" placeholder="Imię" required>
 
                   <div>
-                    <label class="g780ms-0 dlUeSf qtrnpk-1 cZROhH">Sobrenome</label>
-                    <input name="registration_lastname" type="text" class="sc-19rce1w-0 hmhrLa" value="" placeholder="Sobrenome" required>
+                    <label class="g780ms-0 dlUeSf qtrnpk-1 cZROhH">Nazwisko</label>
+                    <input name="registration_lastname" type="text" class="sc-19rce1w-0 hmhrLa" value="" placeholder="Nazwisko" required>
                   </div>
                 </div>
 
@@ -122,14 +122,14 @@
 
                 <div class="qtrnpk-2 eWHATQ">
                   {!! csrf_field() !!}
-                  <button type="submit" class="sc-1qu1gou-0 gzrAQh"><span class="sc-1qu1gou-2">Registrar</span></button></div>
-                <div class="qtrnpk-3 fCEexJ"><a class="qtrnpk-4 fFWwUW" href="/auth/login">Ja é Registrado?</a></div>
+                  <button type="submit" class="sc-1qu1gou-0 gzrAQh"><span class="sc-1qu1gou-2">Zarejestruj</span></button></div>
+                <div class="qtrnpk-3 fCEexJ"><a class="qtrnpk-4 fFWwUW" href="/auth/login">Zarejestrowany? Przejdz do logowania.</a></div>
               </div>
             </div>
           </form>
 
 
-          <p class="cyh04c-7 fFcOT">© 2022 - 2023&nbsp;<a rel="noopener nofollow noreferrer" href="https://github.com/CatValentine-Dev" target="_blank" class="cyh04c-8 emCXNB">TemuxOS Software</a></p>
+          <p class="cyh04c-7 fFcOT">© 2022 - 2023&nbsp;<a rel="noopener nofollow noreferrer" href="https://github.com/TheKoteczek1312" target="_blank" class="cyh04c-8 emCXNB">Register module by TheKoteczek</a></p>
         </div>
       </div>
     </div>
