@@ -17,10 +17,10 @@ portuguese(){
     echo -e "Register Module Instalator"
     echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
     echo -e "Select your Language"
-    echo -e "${CYAN}[1] Portuguese"
+    echo -e "${CYAN}[1] English"
     echo -e "${CYAN}[2] Exit"
     
-read -p "Insira um numero: " choice
+read -p "wprowadź numer: " choice
 if [ $choice == "1" ]
     then
     portuguese
